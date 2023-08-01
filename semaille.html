@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jeu de semaille</title>
+		<meta charset="utf-8">
+		<meta name="title" content="Sahel Game - Semaille">
+		<meta name="description" content="Jeu de semaille en ligne">
+		<link rel="stylesheet" type="text/css" href="css/semaille_styles.css">
+		<link rel="icon" type="image/png" href="img/ic_semaille.png">
+	</head>
+	<body>
+
+		<header style="text-align: center; padding-bottom: 20px;">
+			<tr>
+				<td><img src="img/krour_logo.png" /></td>
+				<td><img src="img/krour_arabic_logo.png" /></td>
+			</tr>
+		</header>
+		
+		<section style="text-align: center;">
+			<div style="display: inline-block;
+				background-color: #B57F5F;
+				border: 1px solid black;
+				border-radius: 80px;
+				padding: 5px;
+				vertical-align: middle;">
+				<div id="plateau">
+					<div class="siege" id="siege_gauche" style="display: inline-block;">
+						<span id="textGauche">0</span>
+					</div>
+					<table style="display: inline-block;">
+						<tr class="ligne">
+							<td class="label_haut"><span class="nombre" id="nombre_6">0</span></td>
+							<td class="label_haut"><span class="nombre" id="nombre_5">0</span></td>
+							<td class="label_haut"><span class="nombre" id="nombre_4">0</span></td>
+							<td class="label_haut"><span class="nombre" id="nombre_3">0</span></td>
+							<td class="label_haut"><span class="nombre" id="nombre_2">0</span></td>
+							<td class="label_haut"><span class="nombre" id="nombre_1">0</span></td>
+						</tr>
+						<tr class="ligne">
+							<td class="place"><canvas class="chambre" id="chambre6" /></td>
+							<td class="place"><canvas class="chambre" id="chambre5" /></td>
+							<td class="place"><canvas class="chambre" id="chambre4" /></td>
+							<td class="place"><canvas class="chambre" id="chambre3" /></td>
+							<td class="place"><canvas class="chambre" id="chambre2" /></td>
+							<td class="place"><canvas class="chambre" id="chambre1" /></td>
+						</tr>
+						<tr class="ligne">
+							<td class="place"><canvas class="chambre" id="chambre7" /></td>
+							<td class="place"><canvas class="chambre" id="chambre8" /></td>
+							<td class="place"><canvas class="chambre" id="chambre9" /></td>
+							<td class="place"><canvas class="chambre" id="chambre10" /></td>
+							<td class="place"><canvas class="chambre" id="chambre11" /></td>
+							<td class="place"><canvas class="chambre" id="chambre12" /></td>
+						</tr>
+						<tr class="ligne">
+							<td class="label_bas"><span class="nombre" id="nombre_7">0</span></td>
+							<td class="label_bas"><span class="nombre" id="nombre_8">0</span></td>
+							<td class="label_bas"><span class="nombre" id="nombre_9">0</span></td>
+							<td class="label_bas"><span class="nombre" id="nombre_10">0</span></td>
+							<td class="label_bas"><span class="nombre" id="nombre_11">0</span></td>
+							<td class="label_bas"><span class="nombre" id="nombre_12">0</span></td>
+						</tr>
+					</table>
+					<div class="siege" id="siege_droite" style="display: inline-block;">
+						<span id="textDroite">0</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script type="text/javascript" src="js/semaille_script.js">
+			
+		</script>
+
+	</body>
+</html>

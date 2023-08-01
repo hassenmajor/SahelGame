@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jeu du damier</title>
+		<meta charset="utf-8">
+		<meta name="title" content="Sahel Game - Damier">
+		<meta name="description" content="Jeu du damier en ligne">
+		<link rel="stylesheet" type="text/css" href="css/damier_styles.css">
+		<link rel="icon" type="image/png" href="img/ic_damier.png">
+	</head>
+	<body>
+
+		<header style="text-align: center; padding-bottom: 20px;">
+			<tr>
+				<td><img src="img/dhamet_logo.png" /></td>
+				<td><img src="img/dhamet_arabic_logo.png" /></td>
+			</tr>
+		</header>
+
+		<section style="text-align: center;">
+			<div style="display: inline-block;
+				/*position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);*/
+				background-color: #B57F5F;
+				border: 1px solid black;
+				border-radius: 10px;
+				padding: 10px;
+				vertical-align: middle;">
+				<div style="background-color: #F4D7A6;
+					border: 1px solid black;
+					border-radius: 10px">
+					<div id="damier">
+						<table>
+							<tr class="ligne">
+								<td class="place"><img class="pion" id="pion00" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion01" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion02" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion03" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion04" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion05" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion06" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion07" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion08" src="img/pion_noir.png" /></td>
+							</tr>
+							<tr class="ligne">
+								<td class="place"><img class="pion" id="pion10" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion11" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion12" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion13" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion14" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion15" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion16" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion17" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion18" src="img/pion_noir.png" /></td>
+							</tr>
+							<tr class="ligne">
+								<td class="place"><img class="pion" id="pion20" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion21" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion22" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion23" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion24" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion25" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion26" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion27" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion28" src="img/pion_noir.png" /></td>
+							</tr>
+							<tr class="ligne">
+								<td class="place"><img class="pion" id="pion30" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion31" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion32" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion33" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion34" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion35" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion36" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion37" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion38" src="img/pion_noir.png" /></td>
+							</tr>
+							<tr class="ligne">
+								<td class="place"><img class="pion" id="pion40" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion41" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion42" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion43" src="img/pion_noir.png" /></td>
+								<td class="place"><img class="pion" id="pion44" src="" /></td>
+								<td class="place"><img class="pion" id="pion45" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion46" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion47" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion48" src="img/pion_blanc.png" /></td>
+							</tr>
+							<tr class="ligne">
+								<td class="place"><img class="pion" id="pion50" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion51" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion52" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion53" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion54" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion55" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion56" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion57" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion58" src="img/pion_blanc.png" /></td>
+							</tr>
+							<tr class="ligne">
+								<td class="place"><img class="pion" id="pion60" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion61" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion62" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion63" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion64" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion65" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion66" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion67" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion68" src="img/pion_blanc.png" /></td>
+							</tr>
+							<tr class="ligne">
+								<td class="place"><img class="pion" id="pion70" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion71" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion72" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion73" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion74" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion75" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion76" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion77" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion78" src="img/pion_blanc.png" /></td>
+							</tr>
+							<tr class="ligne">
+								<td class="place"><img class="pion" id="pion80" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion81" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion82" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion83" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion84" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion85" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion86" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion87" src="img/pion_blanc.png" /></td>
+								<td class="place"><img class="pion" id="pion88" src="img/pion_blanc.png" /></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script type="text/javascript" src="js/damier_script.js">
+			
+		</script>
+
+	</body>
+</html>
