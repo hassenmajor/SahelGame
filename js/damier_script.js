@@ -1,4 +1,5 @@
 
+const mode_pion = 36;
 var ancienPion;
 var tags = [];
 function setTag(p, n) {
@@ -7,7 +8,6 @@ function setTag(p, n) {
 function getTag(p) {
 	return tags[indiceXY(p)[0]][indiceXY(p)[1]];
 }
-var mode_pion = 36;
 
 const audioPlayer = new Audio("raw/muted_conga.wav");
 const audioWinner = new Audio("raw/fairydust.wav");

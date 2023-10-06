@@ -1,20 +1,16 @@
 
+const mode_bille = 12;
 var maChambre;
-var mode_bille = 12;
 var roleJoueur = false;
 
 const audioPlayer = new Audio("raw/low_conga.wav");
 const audioWinner = new Audio("raw/fairydust.wav");
 
 var imgs = [];
-imgs[0] = new Image();
-imgs.src = "img/bille_haut_transparent.png";
-imgs[1] = new Image();
-imgs.src = "img/bille_droite_transparent.png";
-imgs[2] = new Image();
-imgs.src = "img/bille_gauche_transparent.png";
-imgs[3] = new Image();
-imgs.src = "img/bille_bas_transparent.png";
+imgs[0] = "img/bille_haut_transparent.png";
+imgs[1] = "img/bille_droite_transparent.png";
+imgs[2] = "img/bille_gauche_transparent.png";
+imgs[3] = "img/bille_bas_transparent.png";
 
 textDroite = document.getElementById("textDroite"); textDroite.textContent = 0;
 textGauche = document.getElementById("textGauche"); textGauche.textContent = 0;
@@ -51,6 +47,18 @@ function image(cnv, n) {
                     Math.floor(90+r*Math.sin(a)));
         }
     }
+    //
+    if (n==0)
+    {
+        setTimeout(() => {
+            for (var x=1; x<=12; x++) {
+                if (nombre(x).textContent==0) {
+                    var context = chambre(x).getContext("2d");
+                    context.clearRect(0, 0, cnv.width, cnv.height);
+                }
+            }
+        }, 400);
+    }
 }
 function imageOne(cnv) {
     var context = cnv.getContext("2d");
@@ -67,16 +75,7 @@ function imageOne(cnv) {
 }
 function bille() {
     var n = Math.floor(Math.random()*4);
-    switch (n) {
-        case 1:
-            return "img/bille_haut_transparent.png";
-        case 2:
-            return "img/bille_droite_transparent.png";
-        case 3:
-            return "img/bille_gauche_transparent.png";
-        default:
-            return "img/bille_bas_transparent.png";
-    }
+    return imgs[n];
 }
 
 function chambre(x) {
