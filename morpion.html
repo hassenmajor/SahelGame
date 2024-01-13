@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Jeu du morpion</title>
-		<meta charset="utf-8">
-		<meta name="title" content="Sahel Game - Morpion">
-		<meta name="description" content="Jeu du morpion en ligne">
-		<link rel="stylesheet" type="text/css" href="css/morpion_styles.css">
-		<link rel="icon" type="image/png" href="">
-	</head>
-	<body>
+  <head>
+    <title>Jeu du morpion</title>
+    <meta charset="utf-8" />
+    <meta name="title" content="Sahel Game - Morpion" />
+    <meta name="description" content="Jeu du morpion en ligne" />
+    <link rel="stylesheet" type="text/css" href="css/morpion_styles.css" />
+    <link rel="icon" type="image/png" href="" />
+  </head>
+  <body>
+    <header style="text-align: center; padding: 20px; margin: 10px">
+      <span>Jeu du morpion</span>
+    </header>
 
-		<header style="text-align: center; padding: 20px; margin: 10px;">
-			<span>Jeu du morpion</span>
-		</header>
-		
-		<section style="text-align: center;">
-			<div>
-				<!-- 3 cases * 3 cases -->
-				<div class="conteneur">
-					<div class="case" onclick="action(this)"></div>
-					<div class="case" onclick="action(this)"></div>
-					<div class="case" onclick="action(this)"></div>
-					<div class="case" onclick="action(this)"></div>
-					<div class="case" onclick="action(this)"></div>
-					<div class="case" onclick="action(this)"></div>
-					<div class="case" onclick="action(this)"></div>
-					<div class="case" onclick="action(this)"></div>
-					<div class="case" onclick="action(this)"></div>
-				</div>
-			</div>
-			<br><br>
-			<div>
-				<span id="joueur">Au tour de O</span>
-			</div>
-		</section>
+    <section style="text-align: center">
+      <div>
+        <!-- 3 cases * 3 cases -->
+        <div class="conteneur">
+          <div class="case" onclick="action(this)"></div>
+          <div class="case" onclick="action(this)"></div>
+          <div class="case" onclick="action(this)"></div>
+          <div class="case" onclick="action(this)"></div>
+          <div class="case" onclick="action(this)"></div>
+          <div class="case" onclick="action(this)"></div>
+          <div class="case" onclick="action(this)"></div>
+          <div class="case" onclick="action(this)"></div>
+          <div class="case" onclick="action(this)"></div>
+        </div>
+      </div>
+      <br /><br />
+      <div>
+        <span id="joueur">Au tour de O</span>
+      </div>
+    </section>
 
-		<script type="text/javascript" src="js/morpion_script.js">
-			
-		</script>
-
-	</body>
+    <script type="text/javascript" src="js/morpion_script.js"></script>
+  </body>
 </html>

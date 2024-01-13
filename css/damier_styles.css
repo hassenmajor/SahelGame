@@ -1,16 +1,16 @@
 .pion {
-	margin-left: 2px;
-	margin-right: 2px;
-	width: 50px;
-	height: 50px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 50px;
+  height: 50px;
 }
 body {
-	background: url(../img/texture_dark.jpeg) repeat;
-	background-size: 100% 100vw;
+  background: url(../img/texture_dark.jpeg) repeat;
+  background-size: 100% 100vw;
 }
 #damier {
-	background-size: 90% 90%;
-	background-position: center;
-	background-image: url(../img/damier_font_transparent.png);
-	background-repeat: space;
+  background-size: 90% 90%;
+  background-position: center;
+  background-image: url(../img/damier_font_transparent.png);
+  background-repeat: space;
 }

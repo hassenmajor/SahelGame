@@ -1,0 +1,71 @@
+body {
+  padding: 20px;
+  /* background-color: darkgrey; */
+  background: url(../img/texture_tetris.jpg) repeat;
+  background-size: 100% 100%;
+}
+.case {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  margin: 0;
+  padding: 0;
+  min-width: min(5vw, 3vh);
+  min-height: min(5vw, 3vh);
+}
+.conteneur {
+  border: 4px solid black;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: rgba(240, 255, 255, 0.6);
+}
+
+.bouton {
+  text-align: center;
+  vertical-align: middle;
+  width: min(10vw, 6vh);
+  height: min(10vw, 6vh);
+  background-color: rgb(100, 100, 100);
+  box-shadow: black 10px;
+
+  font-size: x-large;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.bouton:active {
+  margin: min(1vw, 1vh);
+  width: min(8vw, 4vh);
+  height: min(8vw, 4vh);
+}
+.bouton {
+  border: rgb(100, 100, 100) 4px solid;
+  background-color: rgba(100, 100, 100, 0.4);
+}
+#Up {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+#Down {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+#Right {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+#Left {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.commande {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+section div {
+  display: inline-block;
+}
+span {
+  font-weight: bolder;
+  font-size: min(5vw, 3vh);
+  text-shadow: 5px 0 5px white;
+  font-family: Arial, Helvetica, sans-serif;
+}

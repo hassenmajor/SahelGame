@@ -1,223 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jeu du serpent</title>
+    <title>Jeu de tetris</title>
     <meta charset="utf-8" />
-    <meta name="title" content="Sahel Game - Serpent" />
-    <meta name="description" content="Jeu du serpent en ligne" />
-    <link rel="stylesheet" type="text/css" href="css/serpent_styles.css" />
-    <link rel="icon" type="image/png" href="img/ic_serpent.png" />
+    <meta name="title" content="Sahel Game - Tetris" />
+    <meta name="description" content="Jeu de tetris en ligne" />
+    <link rel="stylesheet" type="text/css" href="css/tetris_styles.css" />
+    <link rel="icon" type="image/png" href="img/ic_tetris.png" />
   </head>
   <body>
-    <header style="text-align: center; padding: 20px; margin: 10px">
-      <span>Jeu du serpent</span>
+    <header style="text-align: center; padding: min(2vw, 2vh)">
+      <span>Jeu de tetris</span>
     </header>
 
     <section style="text-align: center">
       <div>
-        <!-- 20 cases * 20 cases -->
+        <!-- 10 cases * 20 cases -->
         <div class="conteneur">
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-          <div class="case"></div>
-
           <div class="case"></div>
           <div class="case"></div>
           <div class="case"></div>
@@ -436,6 +235,6 @@
       </div>
     </section>
 
-    <script type="text/javascript" src="js/serpent_script.js"></script>
+    <script type="text/javascript" src="js/tetris_script.js"></script>
   </body>
 </html>
