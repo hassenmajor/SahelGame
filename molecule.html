@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Molecule" />
+    <meta
+      name="description"
+      content="Chemical Equation Balancer and molar mass calculator"
+    />
+    <title>Molecule</title>
+    <link rel="stylesheet" type="text/css" href="css/molecule_styles.css" />
+    <link rel="icon" type="image/png" href="img/ic_molecule.png" />
+  </head>
+  <body class="pt-5">
+    <section class="container-fluid" style="text-align: center">
+      <div style="margin-top: 3rem; margin-bottom: 3rem">
+        <h1>Chemical Equation Balancer</h1>
+        <h3>and molar mass calculator</h3>
+      </div>
+      <div
+        class="container rounded border p-3"
+        style="background-color: rgba(255, 255, 255, 0.521); padding: 2rem"
+      >
+        <input
+          type="text"
+          id="input"
+          style="
+            display: inline-block;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            padding: 5px;
+            font-size: large;
+          "
+          placeholder="Enter your chemical equation"
+          autofocus
+        />
+
+        <button
+          id="equilibrer"
+          style="
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font: bolder;
+            font-size: large;
+          "
+        >
+          Balance
+        </button>
+
+        <p
+          class="m-2 p-1"
+          style="min-height: 50px; vertical-align: middle; font-size: x-large"
+          id="output"
+        ></p>
+      </div>
+    </section>
+
+    <script src="lib/math.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.2/math.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjs-simplify@0.1.0/simplify.min.js"></script> -->
+
+    <script src="js/molecule_script.js"></script>
+
+    <script src="js/molecule/maths.js"></script>
+    <script src="js/molecule/chimie.js"></script>
+    <script src="js/molecule/corps.js"></script>
+    <script src="js/molecule/atome.js"></script>
+    <script src="js/molecule/molecule.js"></script>
+    <script src="js/molecule/reaction.js"></script>
+    <script src="js/molecule/solide.js"></script>
+  </body>
+</html>

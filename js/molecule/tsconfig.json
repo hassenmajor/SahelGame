@@ -1,0 +1,17 @@
+{
+    "buildOptions": {
+        "target": "es5",
+        "pretty": true,
+        "outDir": "./build"
+    },
+    "files": [
+        "corps.ts",
+        "atome.ts",
+        "molecule.ts",
+        "reaction.ts",
+        "chimie.ts",
+        "maths.ts",
+        "solide.ts"
+    ],
+    "exclude": ["node_modules"]
+}

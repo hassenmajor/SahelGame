@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Générateur de nombres aléatoires</title>
+    </head>
+    <body>
+        <section>
+            <h2>
+                Demander à voir un nombre sans le dire, ensuite cliquez sur COMMENCER.
+            </h2>
+            <button onclick="commencer()">COMMENCER</button>
+            <p></p>
+        </section>
+
+        <script>
+            var txt;
+            var tab = [];
+            var ordre = 10000;
+            
+            function commencer() {
+                
+                for (let i = 0; i < 10; i++)
+                    tab[i] = 0;
+
+                let n;
+                for (let i = 0; i < ordre; i++) {
+                    n = parseInt(Math.random() * 10);
+                    tab[n]++;
+                }
+
+                txt = "";
+                for (let i = 0; i < 10; i++)
+                    txt += '\n' + i + " : " + (tab[i]*100/ordre) + "%";
+
+                document.querySelector("p").innerText = txt;
+            }
+
+        </script>
+    </body>
+</html>
